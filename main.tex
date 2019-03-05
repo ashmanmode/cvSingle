@@ -1,0 +1,272 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Ashish}{Manmode}{
+\href{mailto:ash.manmode@gmail.com}{ash.manmode@gmail.com} | +91 7585 965862
+}
+
+% Part from namesection to add website url
+% \urlstyle{same}\url{http://ashishmanmode.com}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{IIT Kharagpur}
+\descript{Dual Degree (M.tech+B.Tech)}
+\location{M.Tech in Visual Information Processing and Embedded Systems}
+\location{B.Tech in Electronics}
+\location{Apr 2017 | Kharagpur, India \\ Cum. GPA: 8.40/10}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     WORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Navodaya Vidyalaya}
+\location{Higher Secondary
+\\ Apr 2011 |  Wardha, India 
+\\Score: 94.4\%}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/ashmanmode}{\custombold{ashmanmode}} \\
+LinkedIn://  \href{https://in.linkedin.com/in/ashmanmode}{\custombold{ashmanmode}} \\
+Web:// \href{http://ashmanmode.github.io}{\custombold{ashmanmode.github.io}} \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Graduate}
+Parallel \& Distributed Algorithms\\
+Advanced Graph Theory\\
+Digital Image Processing\\
+{\footnotesize \textit{\textbf{(Practicum Included) }}} \\
+Pattern Recognition \& Image Understanding\\
+\sectionsep
+
+\subsection{Undergraduate}
+Algorithms I and II\\
+Speech \& Natural Language Processing\\
+Data Structure \& Object Representation\\
+Machine Intelligence \& Expert Systems\\
+Probability \& Stochastic Processes\\
+Matrix Algebra\\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location{Over 5000 lines:}
+C \textbullet{} C++ \textbullet{} Python \\
+\location{Over 1000 lines:}
+PHP \textbullet{} JavaScript \textbullet{} Matlab \\
+Java \textbullet{} Python \textbullet{} Scala \textbullet{} \LaTeX\ \\
+\location{Familiar:}
+MySQL \textbullet{} Google BigQuery \\
+OpenCV \textbullet{} Unity
+\sectionsep
+
+\section{EXTRA Curricular} 
+Inter-Hall Sketching Competition\\
+Gold [2015] \\
+National Students Space Challenge'13\\
+Subhead [2013]
+
+
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     BHAi BHAI
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Samsung Research Institute}
+\descript{| Senior Software Engineer }
+\location{Jul 2017 – present | Banglore, India}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Building User Profile and Demographics features based on Smartphone Usage 
+\item Designing and building Contexual Recommendation Platform for services 
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Internships}
+
+\runsubsection{IBM India}
+\descript{| Extreme Blue Intern }
+\location{May 2016 – Jul 2016 | Banglore, India}
+\begin{tightemize}
+\item Built a distributed client Server Model on Spark for handling large sized chips
+\item Graph Processing functionalities like path between nodes using Google Pregel 
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Trinity College Dublin}
+\descript{| Visiting Research Student }
+\location{Nov 2015 – Dec 2015 | Dublin, Ireland}
+\begin{tightemize}
+\item Constructed a virtual 3D model of the college with Depth Based Rendering
+\item Occlusion detection for real objects using Google Tango Project 
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Gray Routes Innovative Distributions}
+\descript{| Software Intern}
+\location{May 2015 – Jul 2015 | Mumbai, India}
+\begin{tightemize}
+\item Implemented functionalities using google maps API and the direction service 
+\item Google BigQuery was used for big data parallel query processing
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{PROJECTS}
+\runsubsection{Deep Neural Network based Speech Synthesis}
+\descript{}
+\location{Jul 2015 – Apr 2017 | IIT Kharagpur}
+Developed a TTS Engine by mapping linguistic input features to acoustic output features on DNN. It gave better performance than conventional HMM TTS System
+\sectionsep
+
+\runsubsection{Plagiarism detection using NLP Tree kernel}
+\descript{}
+\location{Jul 2015 – Nov 2015 | IIT Kharagpur}
+Trained SVM using subtree matching techniques on abstract syntax tree \& KL Divergence in the language model generated using in-lined codes, gave 78\% accuracy
+\sectionsep
+
+\runsubsection{Face Recognition using 2D-PCA}
+\descript{}
+\location{Jul 2015 – Nov 2015 | IIT Kharagpur}
+Analyzed 2D-PCA based feature extraction which gave 95.6\% accuracy on face recognition and compared the computational efficiency of 2D-PCA over PCA
+\sectionsep
+
+\runsubsection{Imposter Detection using Key Stroke Dynamics}
+\descript{}
+\location{Jul 2015 – Nov 2015 | IIT Kharagpur}
+Determined the multivariate Gaussian distribution by using the hold times and the latency periods of the keystrokes. Achieved accuracy of 75\% in user detection
+\sectionsep
+
+\runsubsection{Construction of 3D Models from Panoramic Mosaics}
+\descript{}
+\location{May 2015 – Jul 2014 | IIT Kharagpur}
+Designed a interactive tool for 3D reconstruction from panoramic mosaics. The problem was solved as a least square problem for hard and soft constraints
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards} 
+\begin{tabular}{rll}
+2015	     & Rank 108\textsuperscript{th}  & ACM-ICPC Asia, Chennai\\
+2011	     & Best Exhibit  & 98\textsuperscript{th} Indian Science Congress, Chennai\\
+% 2011	     & 1\textsuperscript{st}  & Jawaharlal Nehru National Science Exhibition, Jaipur\\
+%2011	     & 1\textsuperscript{st}  & CBSE XII Board, Pune Region\\
+2008     & Top 10 & XL National Mathematics Talent Competition  \\
+\end{tabular}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SOCIETIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
